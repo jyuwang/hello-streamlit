@@ -8,9 +8,9 @@ import time
 from datetime import datetime, timedelta
 
 # Page title
-st.set_page_config(page_title='Support Ticket Workflow', page_icon='🎫')
-st.title('🎫 Support Ticket Workflow')
-st.info('To write a ticket, fill out the form below. Check status or review ticketing analytics using the tabs below.')
+st.set_page_config(page_title='Easy Refactor Code', page_icon='🎫')
+st.title('Easy Refactor Code')
+st.info('To refactor traditional html/css/js login page code, fill out the form below.')
 
 
 # Generate data
@@ -69,11 +69,12 @@ if 'df' not in st.session_state:
     st.session_state.df = df
 
 def refactorCode(input_html, input_css, input_js):
-    
-    
-    output_html = "testhtml"
-    output_css = "testcss"
-    output_js = "testjs"
+    # output_html = "testhtml"
+    # output_css = "testcss"
+    # output_js = "testjs"
+    output_html = open("new-static/login-page.html").read()
+    output_css = open("new-static/login-page.css").read()
+    output_js = open("new-static/slogin-page.js").read()
     
     return output_html, output_css, output_js
     
