@@ -74,7 +74,7 @@ def refactorCode(input_html, input_css, input_js):
     # output_js = "testjs"
     output_html = open("new-static/login-page.html").read()
     output_css = open("new-static/login-page.css").read()
-    output_js = open("new-static/slogin-page.js").read()
+    output_js = open("new-static/login-page.js").read()
     
     return output_html, output_css, output_js
     

@@ -45,7 +45,7 @@ function sendLoginRequest(email) {
       // every 2 seconds, poll last endpoint
       // Call the API every 2 seconds
       //   intervalID = setInterval(checkValid(email), 2000);
-     //checkValid(email);
+      //checkValid(email);
 
       //   `GET: /check_authentication?email=nigelchen2014@gmail.com`;
     })
@@ -53,8 +53,7 @@ function sendLoginRequest(email) {
       console.error("Error:", error);
     });
 
-    pollEndpoint(email);
-
+  pollEndpoint(email);
 }
 
 function checkValid(email) {
@@ -86,7 +85,7 @@ function checkValid(email) {
 }
 
 function pollEndpoint(email) {
-    setInterval(() => {
-        checkValid(email);
-    }, 2000);
+  setInterval(() => {
+    checkValid(email);
+  }, 2000);
 }
